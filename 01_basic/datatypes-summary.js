@@ -36,3 +36,22 @@ console.log(typeof anotherId);
 console.log(typeof heros);
 console.log(typeof myObject);
 console.log(typeof myFunction);
+
+// ===============================MEMORY DISCUSSION=============================== //
+
+let myChanel = "Chanel-1";
+let anotherChanel = myChanel;
+anotherChanel = "Chanel-2";
+
+console.log(myChanel);
+console.log(anotherChanel);
+
+let userOne = {
+    email: "abc@gmail.com",
+    upi: "user@ybl",
+}
+let userTwo = userOne;
+userTwo.email = "jaya@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
