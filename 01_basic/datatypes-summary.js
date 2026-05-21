@@ -17,4 +17,22 @@ const bigNumber = 65192782756274n;
 // Reference (Non-Primitive)
 
 // Array, Objects, Functions
+// All Non-Primitive or Reference Data type's typeof will be OBJECT
 
+const heros = ["JK", "AK", "RP"];
+let myObject = 
+{
+    name: "Jaya",
+    age: 22,
+}
+
+const myFunction = function() {
+    console.log("Hello Jaya!");
+}
+
+console.log(typeof bigNumber);
+console.log(typeof id);
+console.log(typeof anotherId);
+console.log(typeof heros);
+console.log(typeof myObject);
+console.log(typeof myFunction);
