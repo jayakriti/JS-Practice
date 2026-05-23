@@ -1,10 +1,10 @@
-const name = "JayaKriti";
+/*const name = "JayaKriti";
 const repoCount = 50;
 
 //console.log(name + repoCount + " value");
 //This is old way of concatinating strings and values
 
-const newWay = `My name is ${name} and my repositery count is ${repoCount}.` //ney way to concatinate strings and values
+const newWay = `My name is ${name} and my repositery count is ${repoCount}.` //new way to concatinate strings and values
 console.log(newWay);
 
 //another way to declare STRING as a form of OBJECT
@@ -34,7 +34,18 @@ console.log(url);
 console.log(url.replaceAll('%20','-'));
 
 console.log(url.includes('jaya'));
-console.log(url.includes('hello'));
+console.log(url.includes('hello')); //include function is case sensitive
 
 const secondName = "jaya-kriti-roma"
-console.log(secondName.split('-'));
+console.log(secondName.split('-')); */
+
+// More functions that cane be used on STRING
+
+const newName = "RudraPrakash"
+
+console.log(newName.at(1));
+console.log(newName.at(-7));
+console.log(newName.endsWith('s'));
+console.log(newName.endsWith('h'));
+console.log(newName.includes('Pra')); //include function is case sensitive
+console.log(newName.repeat(2));
