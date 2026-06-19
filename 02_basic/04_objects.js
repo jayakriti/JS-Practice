@@ -34,3 +34,17 @@ console.log(Object.keys(frndMake)); // we can retrive only keys of an object lik
 console.log(Object.values(frndMake)); // we can retrive only values of an object like this and it will result an ARRAY with all VALUES
 
 console.log(frndMake.hasOwnProperty("isLoggedIn"));
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~` DE-STRUCTURE OF OBJECT `~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+
+const course = {
+    courseName: "Craft",
+    price: 999,
+    courseInstructor: "Jaya Kriti"
+}
+
+const {courseInstructor} = course //instead of writing "course.courseInstructor" now we can only write "courseInstructor"
+console.log(courseInstructor);
+
+const {courseInstructor: name} = course //we can even change the name for our convenience now we can use "name" instead of "courseInstructor"
+console.log(name);
