@@ -26,8 +26,8 @@ for (const [key, value] of map) { //[key, value] it destructure the Key-value pa
 }
 
 const myObject = {
-    "game1" : 'NFS',
-    "game2" : 'Spiderman'
+    game1 : 'NFS',
+    game2 : 'Spiderman'
 }
 
 // for (const [key, value] of myObject) {
