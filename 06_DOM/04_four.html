@@ -19,5 +19,35 @@
 
     addLanguage("Python");
     addLanguage("JAVA");
+
+    // ````````````````` OPTIMISED WAY TO ADD ELEMENT ````````````````` //
+    function addOptiLanguage(langName) {
+        const list = document.createElement('li')
+        list.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(list)
+    }
+
+    addOptiLanguage("HTML")
+    addOptiLanguage("CSS")
+    
+// ````````````````` EDIT ````````````````` //
+
+const secondLang = document.querySelector('li:nth-child(2)')
+//secondLang.innerHTML = "Ruby"
+
+// 2nd Approach
+const newli = document.createElement('li')
+newli.textContent = "Ruby"
+secondLang.replaceWith(newli)
+
+const firstLang = document.querySelector('li:first-child')
+// const newFirstLi = document.createElement('li')
+// newFirstLi.textContent = "Uuu La La La"
+// firstLang.replaceWith(newFirstLi)
+firstLang.outerHTML = '<li>Uuu La La La</li>'
+
+// ````````````````` REMOVE ````````````````` //
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
 </script>
 </html>
