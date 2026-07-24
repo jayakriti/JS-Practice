@@ -48,5 +48,5 @@ body.style.backgroundColor = event.target.id
 
 ## Project 2 Solution
 ``` JAVASCRIPT
-
+const
 ```
